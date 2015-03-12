@@ -1,0 +1,5 @@
+appfile <Browser.apk>;
+
+# International build
+replaceinall "IS_INTERNATIONAL_BUILD:Z\n\n    if-eqz" "IS_INTERNATIONAL_BUILD:Z\n\n#    if-eqz";
+replaceinall "IS_INTERNATIONAL_BUILD:Z\n\n    if-nez" "IS_INTERNATIONAL_BUILD:Z\n\n     if-eqz";
